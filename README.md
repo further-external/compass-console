@@ -1,11 +1,13 @@
 # Compass Console
 
-A read-only macOS app for Google Cloud Platform projects. It answers three
+A macOS app for Google Cloud Platform projects. It answers three
 questions: **is anything on fire**, **what exactly is this error**, and **did
 my pipelines run**.
 
 It runs on your own Mac and reads Google Cloud with your own credentials. It
-never writes to your projects, and your project data is not used anywhere except the app.
+only reads your projects - except the **Run** button on a job or workflow page,
+which starts a run after you confirm - and your project data is not
+used anywhere except the app.
 
 This repository holds macOS app's releases.
 
@@ -36,3 +38,10 @@ The app reads only what your own account can. The table shows which APIs the app
 | `roles/storage.objectViewer` on the `gs://<project_id>-dbt` bucket | Cloud Storage API - `storage.googleapis.com`                  |
 | `roles/aiplatform.user`, with the Vertex AI API enabled               | Vertex AI API (Gemini) - `aiplatform.googleapis.com`               |
 | `roles/serviceusage.serviceUsageConsumer`                             | Service Usage - uses the API limits of the project it reads        |
+
+**Run** button, which starts a job or workflow:
+
+| Role                      | Starts                                                      |
+| ------------------------- | ----------------------------------------------------------- |
+| `roles/run.invoker`       | Cloud Run jobs                                              |
+| `roles/workflows.invoker` | Workflows                                                   |
