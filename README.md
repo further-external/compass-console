@@ -5,9 +5,9 @@ questions: **is anything on fire**, **what exactly is this error**, and **did
 my pipelines run**.
 
 It runs on your own Mac and reads Google Cloud with your own credentials. It
-only reads your projects - except the **Run** button on a job or workflow page,
-which starts a run after you confirm - and your project data is not
-used anywhere except the app.
+only reads your project data and it is not used anywhere except the app.
+
+![The Runs page: Cloud Run jobs with their last ten runs, and Cloud Run services](screenshot.webp)
 
 This repository holds macOS app's releases.
 
