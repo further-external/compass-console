@@ -1,23 +1,26 @@
 # Compass Console
 
-A macOS app for Google Cloud Platform projects. It answers three
+A desktop app for Google Cloud Platform projects, for macOS and Windows. It answers three
 questions: **is anything on fire**, **what exactly is this error**, and **did
 my pipelines run**.
 
-It runs on your own Mac and reads Google Cloud with your own credentials. It
+It runs on your own computer and reads Google Cloud with your own credentials. It
 only reads your project data and it is not used anywhere except the app.
 
 ![The Runs page: Cloud Run jobs with their last ten runs, and Cloud Run services](screenshot.webp)
 
-This repository holds macOS app's releases.
+This repository holds the app's releases.
 
 ## Download
 
-**[CompassConsole.dmg](https://github.com/further-external/compass-console/releases/latest/download/CompassConsole.dmg)** - the latest version, for Macs with Apple Silicon.
+- **macOS:** [CompassConsole.dmg](https://github.com/further-external/compass-console/releases/latest/download/CompassConsole.dmg) - for Macs with Apple Silicon
+- **Windows:** [CompassConsole-Setup.exe](https://github.com/further-external/compass-console/releases/latest/download/CompassConsole-Setup.exe) - for 64-bit Windows 10 and 11.
+  The installer is not signed yet, so Windows shows "Windows protected your PC" -
+  click **More info**, then **Run anyway**.
 
 ## Requirements
 
-- macOS on Apple Silicon
+- macOS on Apple Silicon, or 64-bit Windows 10 or 11
 - The [Google Cloud CLI](https://cloud.google.com/sdk/docs/install), signed in
   with `gcloud auth application-default login` - the app can run this for you
   on first launch
