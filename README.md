@@ -48,3 +48,16 @@ The app reads only what your own account can. The table shows which APIs the app
 | ------------------------- | ----------------------------------------------------------- |
 | `roles/run.invoker`       | Cloud Run jobs                                              |
 | `roles/workflows.invoker` | Workflows                                                   |
+
+## Grant Access
+
+`grant-access.sh` enables the APIs the app reads and grants one person all the 
+roles required in one project. Run it as a project Owner, with the project ID and
+the person's email:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/further-external/compass-console/main/grant-access.sh | bash -s -- PROJECT_ID EMAIL
+```
+
+The email is optional: with only `PROJECT_ID`, it enables the APIs and grants
+nothing. It asks before changing anything.
