@@ -7,9 +7,9 @@ my pipelines run**.
 It runs on your own computer and reads Google Cloud with your own credentials. It
 only reads your project data and it is not used anywhere except the app.
 
-![The Runs page: Cloud Run jobs with their last ten runs, and Cloud Run services](screenshot.webp)
-
 This repository holds the app's releases.
+
+![The Runs page: Cloud Run jobs with their last ten runs, and Cloud Run services](screenshot.webp)
 
 ## Download
 
