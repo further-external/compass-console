@@ -15,8 +15,7 @@ This repository holds the app's releases.
 
 - **macOS:** [CompassConsole.dmg](https://github.com/further-external/compass-console/releases/latest/download/CompassConsole.dmg) - for Macs with Apple Silicon
 - **Windows:** [CompassConsole-Setup.exe](https://github.com/further-external/compass-console/releases/latest/download/CompassConsole-Setup.exe) - for 64-bit Windows 10 and 11.
-  The installer is not signed yet, so Windows shows "Windows protected your PC" -
-  click **More info**, then **Run anyway**.
+  The installer is not signed and shows "Windows protected your PC". Click **More info**, then **Run anyway**.
 
 ## Requirements
 
